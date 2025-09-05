@@ -85,6 +85,7 @@ start_jupyter() {
 #                               Main Program                                   #
 # ---------------------------------------------------------------------------- #
 
+apt update
 apt install -y nginx
 apt install -y openssh-server
 
