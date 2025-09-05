@@ -1,5 +1,5 @@
 # Extend the VERL base image
-FROM verlai/verl:app-verl0.5-vllm0.9.1-mcore0.12.2-te2.2
+FROM --platform=linux/amd64 verlai/verl:app-verl0.5-vllm0.9.1-mcore0.12.2-te2.2
 
 # Copy startup scripts to the container
 COPY scripts/start.sh /start.sh
