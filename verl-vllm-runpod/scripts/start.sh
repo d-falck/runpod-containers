@@ -85,10 +85,6 @@ start_jupyter() {
 #                               Main Program                                   #
 # ---------------------------------------------------------------------------- #
 
-apt update
-apt install -y nginx
-apt install -y openssh-server
-
 start_nginx
 
 execute_script "/pre_start.sh" "Running pre-start script..."
@@ -102,3 +98,5 @@ export_env_vars
 execute_script "/post_start.sh" "Running post-start script..."
 
 echo "Start script(s) finished, pod is ready to use."
+
+sleep infinity
